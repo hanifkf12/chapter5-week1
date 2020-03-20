@@ -1,0 +1,2 @@
+rootProject.name='Splash Permission'
+include ':app'
