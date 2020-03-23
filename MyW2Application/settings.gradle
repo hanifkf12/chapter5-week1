@@ -1,0 +1,2 @@
+rootProject.name='My W2 Application'
+include ':app'
