@@ -15,12 +15,16 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        val controller = Controller()
         btn_kirim.setOnClickListener {
             val name = et_name.text.toString()
-            val intent = Intent(this, DetailActivity::class.java)
-            intent.putExtra("name",name)
+            controller.tampilData(name,name){
+                val intent = Intent(this, DetailActivity::class.java)
+                intent.putExtra("name", it)
 
-            startActivity(intent)
+                startActivity(intent)
+            }
+
         }
     }
 

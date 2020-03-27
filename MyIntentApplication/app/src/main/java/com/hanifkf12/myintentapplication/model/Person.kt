@@ -1,4 +1,4 @@
-package com.hanifkf12.myintentapplication
+package com.hanifkf12.myintentapplication.model
 
 import java.io.Serializable
 

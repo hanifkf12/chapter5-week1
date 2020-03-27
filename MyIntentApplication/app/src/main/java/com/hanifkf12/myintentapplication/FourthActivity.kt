@@ -2,6 +2,7 @@ package com.hanifkf12.myintentapplication
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.hanifkf12.myintentapplication.model.Animal
 import kotlinx.android.synthetic.main.activity_fourth.*
 
 class FourthActivity : AppCompatActivity() {

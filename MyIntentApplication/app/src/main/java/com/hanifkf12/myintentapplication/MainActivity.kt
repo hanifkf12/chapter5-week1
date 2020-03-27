@@ -4,6 +4,8 @@ import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.hanifkf12.myintentapplication.model.Animal
+import com.hanifkf12.myintentapplication.model.Person
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -32,14 +34,18 @@ class MainActivity : AppCompatActivity() {
             }
         }
         btn_serializable.setOnClickListener {
-            val person = Person("Hanif Fathan", "hanif@gmail.com")
+            val person = Person(
+                "Hanif Fathan",
+                "hanif@gmail.com"
+            )
             Intent(this, ThirdActivity::class.java).apply {
                 this.putExtra("person", person)
                 startActivity(this)
             }
         }
         btn_parcelable.setOnClickListener {
-            val animal = Animal("Sapi","Mamalia")
+            val animal =
+                Animal("Sapi", "Mamalia")
             Intent(this, FourthActivity::class.java).apply {
                 this.putExtra("animal", animal)
                 startActivity(this)
